@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 29
+names: ['amp_blue', 'amp_red', 'apriltag_1', 'apriltag_10', 'apriltag_11', 'apriltag_12', 'apriltag_13', 'apriltag_14', 'apriltag_15', 'apriltag_16', 'apriltag_2', 'apriltag_3', 'apriltag_4', 'apriltag_5', 'apriltag_6', 'apriltag_7', 'apriltag_8', 'apriltag_9', 'blue_display', 'blue_robot', 'note', 'notes', 'red_display', 'red_robot', 'speaker_blue', 'speaker_red', 'stage', 'subwoofer_blue', 'subwoofer_red']
+
+roboflow:
+  workspace: raleigh-slack-idx6f
+  project: 2024-frc
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/raleigh-slack-idx6f/2024-frc/dataset/4
