@@ -81,7 +81,7 @@ def drawBoundingBox(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="yolov8n.onnx", help="Inputs the filename of your ONNX model.")
+    parser.add_argument("--model", default="./models/FRC2024.onnx", help="Inputs the filename of your ONNX model.")
     parser.add_argument("--img", default="bus.jpg", help="Path to image")
     args = parser.parse_args()
     main(args.model, args.img)

@@ -1,22 +1,6 @@
 names:
 - amp_blue
 - amp_red
-- apriltag_1
-- apriltag_10
-- apriltag_11
-- apriltag_12
-- apriltag_13
-- apriltag_14
-- apriltag_15
-- apriltag_16
-- apriltag_2
-- apriltag_3
-- apriltag_4
-- apriltag_5
-- apriltag_6
-- apriltag_7
-- apriltag_8
-- apriltag_9
 - black_robot
 - blue_display
 - blue_robot
@@ -28,13 +12,13 @@ names:
 - speaker_red
 - subwoofer_blue
 - subwoofer_red
-nc: 29
+nc: 13
 roboflow:
   license: CC BY 4.0
   project: 2024-frc
-  url: https://universe.roboflow.com/raleigh-slack-idx6f/2024-frc/dataset/5
-  version: 5
+  url: https://universe.roboflow.com/raleigh-slack-idx6f/2024-frc/dataset/6
+  version: 6
   workspace: raleigh-slack-idx6f
 test: ../test/images
-train: 2024-FRC-5/train/images
-val: 2024-FRC-5/valid/images
+train: 2024-FRC-6/train/images
+val: 2024-FRC-6/valid/images
