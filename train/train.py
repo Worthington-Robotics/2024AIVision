@@ -8,11 +8,14 @@ def main(key):
 
     rf = Roboflow(api_key=key)
     project = rf.workspace("worbots-4145").project("2024-frc")
-    dataset = project.version(7).download("yolov8")
+    version = project.version(8)
+    dataset = version.download("yolov8")
 
-    model.train(data=f"{dataset.location}/data.yaml", epochs=1000, imgsz=640, patience=1000, plots=True)
+    model.train(data=f"{dataset.location}/data.yaml", epochs=900, imgsz=640, patience=900, plots=True)
     model.val()
     model.export(format='onnx')
+    # version.deploy("yolov8", "./")
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
