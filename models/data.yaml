@@ -1,24 +1,16 @@
 names:
-- amp_blue
-- amp_red
-- black_robot
-- blue_display
-- blue_robot
-- note
-- notes
-- red_display
-- red_robot
-- speaker_blue
-- speaker_red
-- subwoofer_blue
-- subwoofer_red
-nc: 13
-roboflow:
-  license: CC BY 4.0
-  project: 2024-frc
-  url: https://universe.roboflow.com/raleigh-slack-idx6f/2024-frc/dataset/6
-  version: 6
-  workspace: raleigh-slack-idx6f
-test: ../test/images
-train: 2024-FRC-6/train/images
-val: 2024-FRC-6/valid/images
+  0: black_robot
+  1: blue_display
+  2: blue_robot
+  3: note
+  4: notes
+  5: red_display
+  6: red_robot
+  7: speaker_blue
+  8: speaker_red
+  9: subwoofer_blue
+  10: subwoofer_red
+path: ./
+test: test/images
+train: train/images
+val: valid/images
