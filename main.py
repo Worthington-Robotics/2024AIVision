@@ -11,13 +11,14 @@ colors = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
 BOUNDING_BOX_EXPAND = 20
 
-def main(onnx_model, input_image):
-    # Load the ONNX Model
-    model: cv2.dnn.Net = cv2.dnn.readNetFromONNX(onnx_model)
 
+def main(onnx_model, input_image):
     # Read the input image
     original_image: np.ndarray = cv2.imread(input_image)
     [height, width, _] = original_image.shape
+    
+    # Load the ONNX Model
+    model: cv2.dnn.Net = cv2.dnn.readNetFromONNX(onnx_model)
 
     # Prepare a square image for inference
     length = max((height, width))
@@ -167,7 +168,8 @@ if __name__ == "__main__":
     parser.add_argument("--model", default="./models/FRC2024.onnx",
                         help="Inputs the filename of your ONNX model.")
     parser.add_argument("--img", default="bus.jpg", help="Path to image")
-    parser.add_argument("--mode", default="img", help="Mode to run in, img or live")
+    parser.add_argument("--mode", default="img",
+                        help="Mode to run in, img or live")
     args = parser.parse_args()
     if args.mode == "img":
         main(args.model, args.img)
